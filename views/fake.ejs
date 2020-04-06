@@ -1,0 +1,52 @@
+<%- include ('partials/header') -%>
+
+        <br /><br/><br />
+
+        <header>
+            <h1> Author Details </h1>
+        </header>
+        
+        <br /><br/><br />
+        <main>
+            
+            
+            <% let firstName = faker.name.firstName(); %>
+            <% let lastName = faker.name.lastName();   %>
+
+            <% let jobTitle = faker.name.jobTitle();   %>
+            <% let prefix = faker.name.prefix();     %>
+            <% let suffix = faker.name.suffix();  %>
+            <% let jobArea = faker.name.jobArea(); %>
+            <% let phone = faker.phone.phoneNumber();  %>
+
+            <div id="welcomeText">
+                Using Faker package to display random fake data details about author: 
+            <br /><br/>
+            
+                    <div class="form-group row"> First Name: 
+                    <div class="col-sm-4" style="color: red"> <%=firstName%> </div> </div>
+                    
+                    <div class="form-group row"> Last Name:  
+                    <div class="col-sm-4" style="color: red"> <%=lastName%> </div> </div>
+                    
+                    <div class="form-group row"> Job Title: 
+                    <div class="col-sm-4" style="color: red"> <%=jobTitle%> </div> </div>
+                    
+                    <div class="form-group row"> Prefix:   
+                    <div class="col-sm-4" style="color: red">  <%=prefix%> </div> </div>
+                    
+                    <div class="form-group row"> Suffix: 
+                    <div class="col-sm-4" style="color: red">  <%=suffix%> </div> </div>
+                    
+                    <div class="form-group row"> Job Area:  
+                    <div class="col-sm-4" style="color: red"> <%=jobArea%> </div> </div>
+                    
+                    <div class="form-group row"> Phone No:  
+                    <div class="col-sm-4" style="color: red"> <%=phone%> </div> </div>
+
+            </div>
+
+            
+            
+            
+<%- include ('partials/footer') -%>
